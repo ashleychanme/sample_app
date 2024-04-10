@@ -2,6 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.3.0"
+gem "bcrypt",          "3.1.18"
 gem "bootstrap-sass",  "3.4.1"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "rails",           "7.0.4.3"
