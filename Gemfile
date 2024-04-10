@@ -2,7 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.3.0"
-
+gem "bootstrap-sass",  "3.4.1"
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "rails",           "7.0.4.3"
 gem "sassc-rails",     "2.1.2"
 gem "sprockets-rails", "3.4.2"
@@ -37,4 +38,4 @@ group :test do
 end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
-# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+#gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
